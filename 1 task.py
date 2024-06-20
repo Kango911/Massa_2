@@ -1,12 +1,12 @@
 from collections import deque
 
-# Определение структуры данных для квартиры
+# Определение структуры данных для квартиры#Kango911
 class Apartment:
     def __init__(self, street, house_number, apartment_number):
         self.street = street
         self.house_number = house_number
         self.apartment_number = apartment_number
-
+#Kango911
 # Создание стека
 stack = deque()
 
@@ -20,7 +20,7 @@ def count_houses_on_deribasovskaya(stack):
     count = 0
     for apartment in stack:
         if apartment.street == "Дерибасовская":
-            count += 1
+            count += 1#Kango911
     return count
 
 # Пример добавления квартир в стек
@@ -29,13 +29,13 @@ add_apartment(stack, "Пушкинская", 20, 10)
 add_apartment(stack, "Дерибасовская", 15, 7)
 
 # Добавление новой квартиры
-add_apartment(stack, "Дерибасовская", 25, 12)
+add_apartment(stack, "Дерибасовская", 25, 12)#Kango911
 
 # Просмотр данных стека
 print("Данные стека:")
 for apartment in stack:
     print(f"Улица: {apartment.street}, Номер дома: {apartment.house_number}, Номер квартиры: {apartment.apartment_number}")
 
-# Подсчет количества домов на улице "Дерибасовская"
+# Подсчет количества домов на улице "Дерибасовская"#Kango911
 count_deribasovskaya = count_houses_on_deribasovskaya(stack)
 print(f"Количество домов на улице 'Дерибасовская': {count_deribasovskaya}")

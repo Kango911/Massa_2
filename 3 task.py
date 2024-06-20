@@ -69,7 +69,7 @@ queue2 = Queue()
 queue2.enqueue(8)
 queue2.enqueue(6)
 queue2.enqueue(4)
-
+#Kango911
 # Вывод начальных адресов первой очереди
 if queue1.is_empty():
     print("nil nil")
@@ -82,12 +82,12 @@ if queue2.is_empty():
 else:
     print(f"P3 = {queue2.head.value}, P4 = {queue2.tail.value}")
 
-# Перемещение элементов из первой очереди во вторую
+# Перемещение элементов из первой очереди во вторую#Kango911
 move_elements(queue1, queue2)
 
 # Вывод новых адресов первой очереди
 if queue1.is_empty():
-    print("nil nil")
+    print("nil nil")#Kango911
 else:
     print(f"Новые P1 = {queue1.head.value}, P2 = {queue1.tail.value}")
 

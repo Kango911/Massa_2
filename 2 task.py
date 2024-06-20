@@ -2,7 +2,7 @@
 class Node:
     def __init__(self, value=None):
         self.value = value
-        self.next = None
+        self.next = None#Kango911
 
 
 # Определение класса очереди
@@ -11,6 +11,7 @@ class Queue:
         self.head = None
         self.tail = None
 
+    # Kango911
     def is_empty(self):
         return self.head is None
 
@@ -23,12 +24,13 @@ class Queue:
             self.tail.next = new_node
             self.tail = new_node
 
+    # Kango911
     def dequeue(self):
         if self.is_empty():
             raise IndexError("Очередь пуста")
         value = self.head.value
         self.head = self.head.next
-        if self.head is None:
+        if self.head is None:#Kango911
             self.tail = None
         return value
 
@@ -39,13 +41,13 @@ class Queue:
             elements.append(current.value)
             current = current.next
         return " -> ".join(map(str, elements))
-
+#Kango911
 
 # Создание очереди и добавление элементов
 queue = Queue()
 queue.enqueue("one")
 queue.enqueue("two")
-queue.enqueue("three")
+queue.enqueue("three")#Kango911
 queue.enqueue("four")
 queue.enqueue("five")
 queue.enqueue("six")
@@ -56,7 +58,7 @@ print("Исходная очередь:")
 print(queue)
 
 # Удаление одного элемента из очереди
-queue.dequeue()
+queue.dequeue()#Kango911
 
 # Добавление новой строки в очередь
 queue.enqueue("eight")
